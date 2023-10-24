@@ -29,11 +29,23 @@
 
     <script>
       
-      // Creating a JS object
+      //Create JS object
+
+      const person = {
+        firstName: "Kevin",
+        lastName: "Durant",
+        age: 35,
+      };
 
       // Add function
-
+      console.log(person.fullName)
       // Show in console
+
+      person.age = 35;  
+
+      delete person.age;
+
+      console.log(person)
 
       // Change property value
 
@@ -43,8 +55,9 @@
 
       // Show scope of the DOM
 
+
       // Populate the containers with object properties
-      
+      document.getElementById("firstName").innerHTML = person.firstName;
     </script>
   </body>
 </html>
